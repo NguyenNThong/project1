@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+     <h1>
+        <img src="1.jpg", style="width: 5%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);"><br>
+        Company XXX</h1>
+     <nav>
+        <a href="index.html" class="a">Home</a> 
+        <a href="apply.html" class="a">Apply</a>
+        <a href="Introduction.html" class="a">Introduction</a> 
+        <a href="about.html" class="a">About us</a>
+      </nav>
+    </header>
+    <h2>📌 Application Form</h2>
+    <fieldset>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post", style="line-height: 1.8;">
+            <div class="container">
+            <div>
+            <label for="name" class="b">First Name:</label>
+            <input type="text" id="name" name="name" required placeholder="e.g. A" maxlength="20" pattern="[A-Za-z]{1,20}"><br><br>
+            <label for="name" class="b">Last Name:</label>
+            <input type="text" id="name" name="name" required placeholder="e.g. Nguyễn" maxlength="20" pattern="[A-Za-z]{1,20}"><br><br>
+            <label for="email" class="b">Email Address:</label>
+            <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="e.g. XXXXX@gmail.com"><br><br>
+            <label for="phone" class="b">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="^(0|\+84)(3[2-9]|5[6|8|9]|7[0|6-9]|8[1-6|8|9]|9[0-9])[0-9]{7}" placeholder="e.g. 0799300909"><br><br>
+            </select>
+            <label for="gender" class="b">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+                <br><br>
+            <label for="dob" class="b">Birthday (dd/mm/yyyy):</label>
+            <input type="text" id="dob" name="dob" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" placeholder="dd/mm/yyyy" required><br><br>
+            </div>
+            <div>
+            <label for="name" class="b">Street Address:</label>
+            <input type="text" id="name" name="name" required placeholder="e.g. 48 Trung Nu Vuong Street" maxlength="40"><br><br>
+            <label class="b">Surburb/Town: </label>
+            <input type="text" id="name" name="name" required placeholder="e.g. Da Nang" maxlength="40"><br><br>
+            <label for="postcode" class="b">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" pattern="^\d{4}$" maxlength="4" placeholder="Enter your postcode" required><br><br>
+            <label for="state" class="b">State:</label>
+            <select id="state" name="state" required>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
+                <br><br>
+            <label class="b">Required technical list </label>
+            <td>
+                <input type="radio" id="JavaScript" name="unit" value="JavaScript" required>
+                <label for="JavaScript">JavaScript</label>
+                <input type="radio" id="Python" name="unit" value="Python">
+                <label for="Python">Python</label>
+                <input type="radio" id="C++" name="unit" value="C++">
+                <label for="C++">C++</label>
+            </td>
+                </label>
+                    <br><br>
+            <label for="Job reference number " class="b">Job reference number:</label>
+            <select id="Job reference number " name="Job reference number " required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+                <br><br>
+            <label for="coverletter" class="b">Other skills:</label>
+            <textarea id="coverletter" name="coverletter" rows="4" cols="50"></textarea><br><br>
+            </div>
+            </div>
+            <div class="div2">
+            <input type="submit" value="Submit Application" id="submit">
+            <input type="reset" value="Reset" id="submit">
+            </div>
+        </form>
+    </fieldset>
+    </body>
+    <footer style="text-align: center;">
+        <p>© 2025 Company XXX</p>
+        <p>
+        <a href="https://hoangphuchai19102006.atlassian.net/jira/software/projects/PA/summary", class="a">Jira Project</a>
+        </p>
+    </footer>
+</html>

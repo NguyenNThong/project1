@@ -1,0 +1,204 @@
+.a {
+  display: inline-block;       /* Allows the element to flow inline but behave like a block (can set width, height, etc.) */
+  padding: 7px;                /* Adds space inside the element between its content and border */
+  margin: 1px;                 /* Adds space outside the element between it and surrounding elements */
+  color: black;               /* Sets the text color to black */
+  font-family: Georgia, serif;/* Uses Georgia font, with serif as fallback if Georgia is unavailable */
+  font-size: 25px;            /* Sets the size of the text to 25 pixels */
+  text-decoration-line: underline; /* Adds an underline to the text (overrides previous 'none' if both are applied) */
+}
+
+nav {
+  display: flex; /* Enable Flexbox for flexible horizontal layout */
+  gap: 40px; /* Set 40px spacing between child elements */
+  list-style: none; /* Remove default list bullets or numbering */
+  justify-content: center; /* Horizontally center all child elements */
+  align-items: center; /* Vertically center all child elements */
+  margin-bottom: 40px; /* Add space below the navigation bar */
+  background: linear-gradient(to right, lightgray, lightblue, lightgreen); /* Apply a horizontal gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow below the nav for depth */
+  border-radius: 8px; /* Round the corners of the nav container */
+  padding: 20px; /* Add space inside the nav container around its content */
+}
+
+nav a {
+  color: black; /* Set the link text color to black */
+  text-decoration: none; /* Remove underline from links */
+}
+
+nav a.active {
+  border-bottom: 2px solid #3498db; /* Add a blue underline to indicate the active link */
+  background-color: #3498db; /* Set a blue background color for the active link */
+}
+
+
+h2, .h2 {
+  font-style: italic; /* Italicize the text */
+  font-family: 'Courier New', Courier, monospace; /* Use Courier New or fallback to monospace fonts */
+  font-size: 40px; /* Set the font size to 40 pixels */
+  background-color: #f0f8ff; /* Set a light blue background color */
+  padding: 20px; /* Add 20 pixels of internal spacing around the content */
+  margin-bottom: 20px; /* Add 20 pixels of space below the element (overwrites previous margin-bottom) */
+  border-radius: 8px; /* Round the corners with an 8-pixel radius */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Apply a soft shadow around the element */
+}
+
+.b {
+  font-weight: bold; /* Make the text bold */
+  font-family: 'Courier New', Courier, monospace; /* Use Courier New or fallback to monospace fonts */
+  font-size: 25px; /* Set the font size to 20 pixels */
+  padding-left: 40px; /* Add 40 pixels of space to the left inside the element */
+}
+
+.container {
+  display: grid; /* Enable Flexbox for flexible layout within the container */
+  justify-content: center; /* Horizontally center-align content inside the container */
+  grid-template-columns: auto auto; /* Create two equal-width columns */
+  grid-auto-rows: auto; /* Automatically size rows based on content height */
+  flex: 1; /* Allow the container to grow and fill available space */
+}
+
+.container div {
+  background-color: #f1f1f1; /* Set a light grey background for each div inside the container */
+  border-radius: 30px; /* Round the corners of each div with a 30-pixel radius */
+  margin: 10px; /* Add 10 pixels of space outside each div */
+  padding: 20px; /* Add 20 pixels of internal space inside each div */
+  font-size: 24px; /* Set the text size inside each div to 24 pixels */
+  border-length: auto; /* Automatically adjust the length based on content */
+}
+
+.staff-photo {
+  width: 70%; /* Set the image width to 70% of its parent container */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  border-radius: 8px; /* Round the corners of the image by 8 pixels */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Apply a soft shadow around the image */
+  margin-top: 20px; /* Add 20 pixels of space above the image */
+  margin-inline: 100px; /* Add 100 pixels of space on both left and right sides */
+}
+
+li {
+  margin-bottom: 30px; /* Add 20 pixels of space below each list item */
+  text-align: left; /* Align the text to the left inside each list item */
+}
+
+h1 {
+  font: bold 50px 'Segoe UI', sans-serif; /* Set font size, family, and fallback */
+  color: #333; /* Dark gray text color */
+  text-align: center; /* Center-align the heading */
+  letter-spacing: 1px; /* Add spacing between letters */
+  text-shadow: 1px 6px 3px rgba(0,0,0,0.5); /* Apply soft shadow behind text */
+  margin-bottom: 40px; /* Add space below the heading */
+}
+
+
+body {
+  margin: 0; /* Remove default margin around the body */
+  height: 100%; /* Set the body height to fill the entire viewport */
+  background: url("nnn.jpg") no-repeat center center fixed; /* Set a fixed background image centered both horizontally and vertically */
+  background-size: cover; /* Scale the background image to cover the entire screen */
+  position: relative; /* Set relative positioning to allow absolute children */
+}
+
+body::after {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the body */
+  top: 0; left: 0; /* Anchor it to the top-left corner */
+  width: 100%; height: 100%; /* Make it cover the entire body */
+  background: rgba(255,255,255,0.5); /* Apply a semi-transparent white overlay */
+  z-index: -1; /* Place it behind all other content */
+}
+
+#submit {
+  background-color: lightgray; /* Set the button background color to light gray */
+  border: none; /* Remove the default border */
+  color: black; /* Set the button text color to black */
+  padding: 15px 32px; /* Add vertical and horizontal padding inside the button */
+  text-decoration: none; /* Remove underline or other text decorations */
+  display: inline-block; /* Allow the button to behave like a block while staying inline */
+  font-size: 16px; /* Set the font size to 16 pixels */
+  margin: 4px 2px; /* Add spacing around the button */
+  cursor: pointer; /* Change cursor to pointer when hovering over the button */
+  border-radius: 12px; /* Round the corners of the button with a 12-pixel radius */
+}
+
+.div1 {
+  display: flex; /* Enable Flexbox layout for the container */
+}
+
+.div1 div {
+  align-items: flex-start; /* Align child items to the top of the container */
+  justify-content: space-between; /* Distribute space evenly between child items */
+  flex: 1; /* Allow each child div to grow and fill available space equally */
+}
+.div2 {display:flex; justify-content: center; align-items: center; margin-top: 20px;}
+.building {
+  width: 70%; /* Set the element width to 70% of its parent container */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  border-radius: 8px; /* Round the corners of the element by 8 pixels */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Apply a soft shadow around the element */
+  margin-top: 20px; /* Add 20 pixels of space above the element */
+  margin-inline: 100px; /* Add 100 pixels of space on both left and right sides */
+}
+
+.one {
+  width: 5%; /* Set the element width to 5% of its parent container */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  border-radius: 8px; /* Round the corners of the element by 8 pixels */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Apply a soft shadow around the element */
+}
+aside {
+  width: 25%; /* Set the aside width to 25% of its parent container */
+  float: right; /* Float the aside to the right side of its container */
+}
+footer {
+  background-color: #f1f1f1; /* Set a light grey background color for the footer */
+  padding: 10px 0; /* Add vertical padding of 10 pixels and no horizontal padding */
+  position: relative; /* Set relative positioning to allow absolute children if needed */
+  bottom: 0; /* Anchor the footer to the bottom of its container */
+  width: 100%; /* Make the footer span the full width of its container */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Apply a subtle shadow above the footer for depth */
+  text-align: center; /* Center-align the text inside the footer */
+}
+table {
+      margin: 30px auto; /* center the table with margin */
+      border-collapse: collapse; /* collapse borders for cleaner look */
+      width: auto; /* auto width based on content */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    }
+    th {
+      font-weight: bold; /* make header text bold */
+      background-color: #d1e8ff; /* hex color */
+      padding: 10px; /* padding inside header cells */
+      border: 1px solid #ccc;   /* border around header cells */
+      font-size: 40px; /* larger font size for headers */
+    }
+    td {
+      background-color: #f9f9f9; /* hex color */
+      padding: 10px; /* padding inside data cells */
+      border: 1px solid #ccc;  /* border around data cells */
+      text-align: center;   /* center-align text in data cells */
+      font-size: 30px; /* font size for data cells */
+    }
+    td:hover {
+      background-color: #cce5ff; /* hover effect */
+    }
+        .member {
+      display: flex; /* use flexbox for layout */
+      justify-content: space-between; /* space out name and ID */
+      margin-bottom: 10px; /* space below each member */
+    }
+    .student-id {
+      text-align: right; /* align ID to the right */
+      color: #555; /* darker text color for IDs */
+    }
+    figure {
+      float: right; /* float images to the right */
+      margin-left: 20px; /* space between image and text */
+    }
+    figure img {
+      border: 3px solid #333; /* shorthand border */
+      width: 150px; /* fixed width */
+      height: auto; /* maintain aspect ratio */
+      border-radius: 4px; /* rounded corners */
+    }
+    .colspan {colspan: 2;} /* class to span two columns */
