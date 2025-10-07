@@ -26,13 +26,7 @@ nav a {
   text-decoration: none; /* Remove underline from links */
 }
 
-nav a.active {
-  border-bottom: 2px solid #3498db; /* Add a blue underline to indicate the active link */
-  background-color: #3498db; /* Set a blue background color for the active link */
-}
-
-
-h2, .h2 {
+h2 {
   font-style: italic; /* Italicize the text */
   font-family: 'Courier New', Courier, monospace; /* Use Courier New or fallback to monospace fonts */
   font-size: 40px; /* Set the font size to 40 pixels */
@@ -54,7 +48,6 @@ h2, .h2 {
   display: grid; /* Enable Flexbox for flexible layout within the container */
   justify-content: center; /* Horizontally center-align content inside the container */
   grid-template-columns: auto auto; /* Create two equal-width columns */
-  grid-auto-rows: auto; /* Automatically size rows based on content height */
   flex: 1; /* Allow the container to grow and fill available space */
 }
 
@@ -62,10 +55,10 @@ h2, .h2 {
   background-color: #f1f1f1; /* Set a light grey background for each div inside the container */
   border-radius: 30px; /* Round the corners of each div with a 30-pixel radius */
   margin: 10px; /* Add 10 pixels of space outside each div */
-  padding: 20px; /* Add 20 pixels of internal space inside each div */
+  padding: 50px; /* Add 20 pixels of internal space inside each div */
   font-size: 24px; /* Set the text size inside each div to 24 pixels */
-  border-length: auto; /* Automatically adjust the length based on content */
 }
+
 
 .staff-photo {
   width: 70%; /* Set the image width to 70% of its parent container */
@@ -94,7 +87,8 @@ h1 {
 body {
   margin: 0; /* Remove default margin around the body */
   height: 100%; /* Set the body height to fill the entire viewport */
-  background: url("nnn.jpg") no-repeat center center fixed; /* Set a fixed background image centered both horizontally and vertically */
+  background-color: #f1f1f1; /* Set a light grey background color */
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); /* Set a background image from a URL */
   background-size: cover; /* Scale the background image to cover the entire screen */
   position: relative; /* Set relative positioning to allow absolute children */
 }
@@ -130,7 +124,7 @@ body::after {
   justify-content: space-between; /* Distribute space evenly between child items */
   flex: 1; /* Allow each child div to grow and fill available space equally */
 }
-.div2 {display:flex; justify-content: center; align-items: center; margin-top: 20px;}
+.div2 {display:flex; justify-content: center; align-items: center; margin-top: 20px;} /* Center content horizontally and vertically with top margin */
 .building {
   width: 70%; /* Set the element width to 70% of its parent container */
   height: auto; /* Automatically adjust height to maintain aspect ratio */
@@ -182,23 +176,60 @@ table {
     td:hover {
       background-color: #cce5ff; /* hover effect */
     }
-        .member {
-      display: flex; /* use flexbox for layout */
-      justify-content: space-between; /* space out name and ID */
-      margin-bottom: 10px; /* space below each member */
-    }
     .student-id {
       text-align: right; /* align ID to the right */
       color: #555; /* darker text color for IDs */
     }
-    figure {
+    .figure {
       float: right; /* float images to the right */
       margin-left: 20px; /* space between image and text */
-    }
-    figure img {
-      border: 3px solid #333; /* shorthand border */
+      border-radius: 4px; /* rounded corners */
       width: 150px; /* fixed width */
       height: auto; /* maintain aspect ratio */
-      border-radius: 4px; /* rounded corners */
+      align: center; /* center alignment */
     }
-    .colspan {colspan: 2;} /* class to span two columns */
+    .figure img {
+      border: 3px solid #333; /* shorthand border */
+      width: 170px; /* fixed width */
+      height: auto; /* maintain aspect ratio */
+      border-radius: 4px; /* rounded corners */
+      
+    }
+
+.team-list {
+  max-width: 600px; /* Limit the maximum width of the list */
+  margin: 30px auto; /* Center the list horizontally with vertical margin */
+  padding: 20px; /* Add padding inside the list container */
+  background: #f9f9f9; /* Light background color for the list */
+  border-left: 5px solid #4CAF50; /* Green left border for emphasis */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-family: 'Segoe UI', sans-serif; /* Use a clean, modern font */
+} 
+
+.team-list dt {
+  font-weight: bold; /* Bold the term text */
+  color: #333; /* Darker color for better readability */
+  margin-top: 15px; /* Space above each term */
+}
+
+.team-list dd {
+  margin-left: 20px; /* Indent the description text */
+  color: #555; /* Slightly lighter color for descriptions */
+  font-style: italic; /* Italicize the description text */
+}
+caption {font-style: italic; /* Italicize the text */
+  font-family: 'Courier New', Courier, monospace,; /* Use Courier New or fallback to monospace fonts */
+  font-size: 40px; /* Set the font size to 40 pixels */
+  background-color: #f0f8ff; /* Set a light blue background color */
+  padding: 20px; /* Add 20 pixels of internal spacing around the content */
+  margin-bottom: 20px; /* Add 20 pixels of space below the element (overwrites previous margin-bottom) */
+  border-radius: 8px; /* Round the corners with an 8-pixel radius */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Apply a soft shadow around the element */
+}
+
+#p {
+  text-align: center; /* Center-align the paragraph text */
+  font-weight: bold; /* Make the text bold */
+  font-size: 20px; /* Set the font size to 20 pixels */
+  margin-top: 10px; /* Add space above the paragraph */
+}
