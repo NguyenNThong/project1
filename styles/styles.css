@@ -36,7 +36,8 @@ h2 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Apply a soft shadow around the element */
 }
 
-.b {
+
+.b, h3{
   font-weight: bold; /* Make the text bold */
   font-family: 'Courier New', Courier, monospace; /* Use Courier New or fallback to monospace fonts */
   font-size: 25px; /* Set the font size to 20 pixels */
@@ -92,11 +93,11 @@ h1 {
 body {
   margin: 0; /* Remove default margin around the body */
   height: 100%; /* Set the body height to fill the entire viewport */
-  background-image: url('FEiINBLVQAMj7tH.jpg'); /* Set a background image from a URL */
+  background-image: url('nnn.jpg'); /* Set a background image from a URL */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-attachment: fixed; /* Keep the background image fixed during scrolling */
   background-size: cover; /* Scale the background image to cover the entire screen */
   position: relative; /* Set relative positioning to allow absolute children */
+  user-select: none; /* Disable text selection on the body */
 }
 
 body::after {
@@ -129,7 +130,7 @@ body::after {
 .div2 {display:flex; justify-content: center; align-items: center; margin-top: 20px;} /* Center content horizontally and vertically with top margin */
 
 .building {
-  width: 70%; /* Set the element width to 70% of its parent container */
+  width: 85%; /* Set the element width to 85% of its parent container */
   height: auto; /* Automatically adjust height to maintain aspect ratio */
   border-radius: 8px; /* Round the corners of the element by 8 pixels */
   box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Apply a soft shadow around the element */
@@ -145,11 +146,12 @@ body::after {
 }
 
 footer {
-  background-color: #f1f1f1; /* Set a light grey background color for the footer */
-  padding: 10px; /* Add vertical padding of 10 pixels and no horizontal padding */
-  position: relative; /* Set relative positioning to allow absolute children if needed */
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Apply a subtle shadow above the footer for depth */
-  text-align: center; /* Center-align the text inside the footer */
+      width: 100%; /* Make the footer span the full width of the page */
+      text-align: center; /* Center-align the footer text */
+      font-size: small; /* Set a smaller font size for the footer */
+      background-color: #e0e6f0; /* Light background color for the footer */
+      padding: 10px 0; /* Add vertical padding inside the footer */
+      clear: both; /* Clear any floating elements above the footer */
 }
 table {
       margin: 30px auto; /* center the table with margin */
@@ -228,4 +230,17 @@ caption {font-style: italic; /* Italicize the text */
   font-weight: bold; /* Make the text bold */
   font-size: 20px; /* Set the font size to 20 pixels */
   margin-top: 10px; /* Add space above the paragraph */
+}
+
+aside {
+      width: 25%;
+      float: right;
+      border: 2px solid #1a3c6e;
+      margin: 10px;
+      padding: 10px;
+      background-color: #f5f9ff;
+    }
+aside ul li {
+      margin-bottom: 10px;
+      font-size: 20px;
 }
