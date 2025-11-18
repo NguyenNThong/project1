@@ -1,3 +1,4 @@
+   <?php include('header.inc'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,26 +8,14 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
-    <header>
-     <h1>
-        <img src="images/1.jpg", class="one"><br>
-        Company XXX</h1>
-     <nav>
-        <a href="index.html" class="a">Home</a>
-        <a href="apply.html" class="a">Apply</a> 
-        <a href="jobs.html" class="a">Introduction</a> 
-        <a href="about.html" class="a">About us</a>
-      </nav>
-    </header>
     <article>
     <div>   
             <div class="container">
                 <div>
                 <h2>📌 Detail</h2>
                     <p class="b"><strong>Founded:</strong> 1900 </p>
-                    <p class="b">Headquarters: Da Nang, Vietnam</p>
-                    <p class="b">Industry: Software development, enterprise technology solutions, and IT outsourcing services.</p>    
+                    <p class="b"><strong>Headquarters:</strong> Da Nang, Vietnam</p>
+                    <p class="b"><strong>Industry:</strong> Software development, enterprise technology solutions, and IT outsourcing services.</p>    
                 <br><br><br><br>
                 <h2>📌 Mission</h2>
                     <p class="b", id="b">Delivering smart technology solutions that empower businesses to transform digitally—efficiently and sustainably.</p>
@@ -51,10 +40,10 @@
                 <br><br><br><br></div>
                 <div><h2>📌 Company culture</h2>
                     <ul class="b">
-                        <li>Innovation: We encourage out-of-the-box thinking to solve complex problems.</li>
-                        <li>Customer-centricity: Our clients' success is our top priority.</li>
-                        <li>Diversity and inclusion: We believe diverse teams drive better outcomes.</li>
-                        <li>Sustainability: We are committed to environmentally responsible practices.</li>
+                        <li><strong>Innovation:</strong> We encourage out-of-the-box thinking to solve complex problems.</li>
+                        <li><strong>Customer-centricity:</strong> Our clients' success is our top priority.</li>
+                        <li><strong>Diversity and inclusion:</strong> We believe diverse teams drive better outcomes.</li>
+                        <li><strong>Sustainability:</strong> We are committed to environmentally responsible practices.</li>
                     </ul>
                     <h2>📌 Key Achievements</h2>
                     <ul class="b">
@@ -68,11 +57,5 @@
                 </div>` 
     </article>
 </body>
- <footer>
-        <p>© 2025 Company XXX</p>
-        <p>
-        <a href="https://hoangphuchai19102006.atlassian.net/jira/software/projects/PA/summary", class="a">Jira Project</a>
-        <a href="https://github.com/NguyenNThong/project1.git" target="_blank", class="a">Github repo</a>
-        </p>
-    </footer>
 </html>
+<?php include('footer.inc'); ?>

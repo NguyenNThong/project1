@@ -1,3 +1,4 @@
+  <?php include('header.inc'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +7,6 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header>
-     <h1>
-        <img src="images/1.jpg", style="width: 5%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);"><br>
-        Company XXX</h1>
-     <nav>
-        <a href="index.html" class="a">Home</a> 
-        <a href="apply.html" class="a">Apply</a>
-        <a href="jobs.html" class="a">Introduction</a> 
-        <a href="about.html" class="a">About us</a>
-      </nav>
-    </header>
     <div class="container">
     <div><h2>📌 About Our Team</h2>
     <ul>
@@ -68,12 +58,6 @@
     <p id="p">Thong</p>
   </div>
 </div>
-
 </body>
-<footer>
-        <p>© 2025 Company XXX</p>
-        <p>
-        <a href="https://hoangphuchai19102006.atlassian.net/jira/software/projects/PA/summary", class="a">Jira Project</a>
-        </p>
-    </footer>
 </html>
+<?php include('footer.inc'); ?>
